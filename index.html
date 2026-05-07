@@ -8,6 +8,236 @@
     <link rel="icon" type="image/png" href="netflix_logo_icon_170919.png">
     <link rel="stylesheet" href="new.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+    }
+
+    .main {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+        align-items: space-between;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: auto;
+        height: 90vh;
+        font-family: 'Inter', sans-serif;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.767)), url('Banner image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-self: top;
+    }
+
+    .logo {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .signin {
+        background-color: #e50914;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 50vh;
+    }
+
+    .hero p {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 800;
+        text-align: center;
+        margin: 0;
+    }
+
+    .middle-part {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .middle-part h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        color: white;
+        text-align: start;
+        padding-top: 50px;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 0;
+        text-align: center;
+    }
+
+    .series {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        align-items: center;
+    }
+
+
+    .stranger-things-img {
+        width: 250px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .stranger-things-img:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
+    .number {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 120px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: black;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .information-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        flex-wrap: wrap;
+        color: white;
+        background-color: #030202;
+    }
+
+    .information-table-header {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid rgb(218, 42, 42);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .information-table-header:hover {
+        background-color: #D91921;
+        scale: 1.05;
+        transition: 0.3s ease-in-out;
+    }
+
+    .information-table h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .information-table p {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 200;
+    }
+
+    .faq-table {
+        width: 77%;
+        margin: auto;
+        color: white;
+        background-color: #2D2D2D;
+        table-layout: fixed;
+
+    }
+
+    .faq-table td {
+        text-align: start;
+        border: 10px solid rgb(0, 0, 0);
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+
+    .faq-table td:hover {
+        background-color: #D91921;
+        scale:1.02;
+        transition: 0.3s ease-in-out;
+    }
+
+    .faq-row {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .quick-links-header {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-align: start;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .quick-links-table {
+        width: 77%;
+        text-align: center;
+        color: rgb(139, 137, 137);
+    }
+
+    .quick-links-table td {
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+    .quick-links-table td:hover {
+        color: #D91921;
+        text-decoration: underline;
+        scale:1.2;
+        transition: 0.3s ease-in-out;
+    }
+</style>
 
 <body>
     <div class="main">
@@ -16,111 +246,81 @@
             <button class="signin">Sign In</button>
         </div>
         <div class="hero">
-            <h1>Unlimited movies, TV shows, and more</h1>
+            <h1>Unlimited movies, <br> shows, and more</h1>
             <p>Watch anywhere. Cancel anytime.</p>
         </div>
     </div>
     <div class="middle-part">
         <h2>Trending Series to Watch</h2>
-        <table class="card-table">
-            <tr>
-                <td>
-                    <div class="card">
-                        <img src="Stranger things.jpg" alt="Stranger Things" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">1</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="Breaking Bad.jpg" alt="Breaking Bad" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">2</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="wednesday.jpg" alt="Wednesday" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">3</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="Dark.png" alt="Dark" class="stranger-things-img" width="400px" border-radius="20px">
-                        <span class="number">4</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="Narcos.jpg" alt="Narcos" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">5</span>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <div class="series">
+            <div class="card">
+                <img src="Stranger Things.jpg" alt="Stranger Things" class="stranger-things-img" width="400px"
+                    border-radius="20px">
+                <span class="number">1</span>
+            </div>
+            <div class="card">
+                <img src="Breaking Bad.jpg" alt="Breaking Bad" class="stranger-things-img" width="400px"
+                    border-radius="20px">
+                <span class="number">2</span>
+            </div>
+            <div class="card">
+                <img src="Wednesday.jpg" alt="Wednesday" class="stranger-things-img" width="400px" border-radius="20px">
+                <span class="number">3</span>
+            </div>
+            <div class="card">
+                <img src="Dark.png" alt="Dark" class="stranger-things-img" width="400px" border-radius="20px">
+                <span class="number">4</span>
+            </div>
+            <div class="card">
+                <img src="Narcos.jpg" alt="Narcos" class="stranger-things-img" width="400px" border-radius="20px">
+                <span class="number">5</span>
+            </div>
+        </div>
         <h2>Trending Movies to Watch</h2>
-        <table class="card-table">
-            <tr>
-                <td>
-                    <div class="card">
-                        <img src="War Machine.jpg" alt="War Machine" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">1</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="K-Pop Demon Hunters.jpg" alt="K-Pop Demon Hunters" class="stranger-things-img"
-                            width="400px" border-radius="20px">
-                        <span class="number">2</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="The RIP.jpg" alt="The RIP" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">3</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="Carry On.jpg" alt="Carry On" class="stranger-things-img" width="400px"
-                            border-radius="20px">
-                        <span class="number">4</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="card">
-                        <img src="A House of Dynamite.jpg" alt="A House of Dynamite" class="stranger-things-img"
-                            width="400px" border-radius="20px">
-                        <span class="number">5</span>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <div class="series">
+            <div class="card">
+                <img src="War Machine.jpg" alt="War Machine" class="stranger-things-img" width="400px"
+                    border-radius="20px">
+                <span class="number">1</span>
+            </div>
+            <div class="card">
+                <img src="K-Pop Demon Hunters.jpg" alt="K-Pop Demon Hunters" class="stranger-things-img" width="400px"
+                    border-radius="20px">
+                <span class="number">2</span>
+            </div>
+            <div class="card">
+                <img src="The RIP.jpg" alt="The RIP" class="stranger-things-img" width="400px" border-radius="20px">
+                <span class="number">3</span>
+            </div>
+            <div class="card">
+                <img src="Carry On.jpg" alt="Carry On" class="stranger-things-img" width="400px" border-radius="20px">
+                <span class="number">4</span>
+            </div>
+            <div class="card">
+                <img src="A House of Dynamite.jpg" alt="A House of Dynamite" class="stranger-things-img" width="400px"
+                    border-radius="20px">
+                <span class="number">5</span>
+            </div>
+        </div>
         <h2>Reasons to Join</h2>
-        <table class="information-table">
-            <tr>
-                <th class="information-table-header">
+        <div class="information-table">
+                <div class="information-table-header">
                     <h3>Enjoy on your TV.</h3>
                     <p>Enjoy exclusive content on your TV.</p>
-                </th>
-                <th class="information-table-header">
+                </div>
+                <div class="information-table-header">
                     <h3>Watch everywhere.</h3>
                     <p>Stream on your phone, tablet, laptop, and TV.</p>
-                </th>
-                <th class="information-table-header">
+                </div>
+                <div class="information-table-header">
                     <h3>Pick your price.</h3>
                     <p>Choose the plan that's right for you.</p>
-                </th>
-                <th class="information-table-header">
+                </div>
+                <div class="information-table-header">
                     <h3>Create your profile.</h3>
                     <p>Customize your experience.</p>
-                </th>
-            </tr>
-        </table>
+                </div>
+        </div>
         <h2>FAQs</h2>
         <table class="faq-table">
             <tr class="faq-row">
